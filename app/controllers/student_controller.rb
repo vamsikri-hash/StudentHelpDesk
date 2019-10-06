@@ -107,6 +107,7 @@ class StudentController < ApplicationController
   end
 
   get "/home/status/:id" do
+    @me = Request.find(params[:id])
     @pendingrequest = RequestPending.find_by(reuest_id: params[:id])
     erb :requeststatus
   end
