@@ -1,10 +1,28 @@
+<section class="mainsec">
+<section class="requestdetails">
+<div class="meetdet">
+<h3>Request Details</h3>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><span class="higlight">Title:</span><%= @me.title %></li>
+    <li class="list-group-item"><span class="higlight">Body:</span><%= @me.body %></li>
+    <li class="list-group-item"><span class="higlight">Sent time:</span><%= @me.created_at %></li>
+  </ul>
+  </div>
+</section>
+<section class="meetingdetails">
+
+<div class="meetdet">
+<h3>Status Details</h3>
   <ul class="list-group list-group-flush">
   	<% if defined? (@pendingrequest.status) !=nil %>
-    <li class="list-group-item">Status:<%= @pendingrequest.status %></li>
-    <li class="list-group-item">Meeting Date:<%= @pendingrequest.meetingdate %></li>
-    <li class="list-group-item">Meeting time:<%= @pendingrequest.meetingtime %></li>
-    <li class="list-group-item">Comments:<%= @pendingrequest.comments %></li>
+    <li class="list-group-item"><span class="higlight">Status:</span><%= @pendingrequest.status %></li>
+    <li class="list-group-item"><span class="higlight">Meeting Date:</span><%= @pendingrequest.meetingdate %></li>
+    <li class="list-group-item"><span class="higlight">Meeting time:</span><%= @pendingrequest.meetingtime %></li>
+    <li class="list-group-item"><span class="higlight">Comments:</span><%= @pendingrequest.comments %></li>
     <% else %>
-    <h1>Your status is still pending....</h1>
+    <h3>Your status is still pending....</h1>
     <% end %>
   </ul>
+  </div>
+  </section>
+  </section>
