@@ -82,13 +82,14 @@ class TeacherController < ApplicationController
 
     @studentrequest = Request.find_by(id: params[:id])
     @requestedstudent = Student.find_by(id: @studentrequest.student_id)
+    @requeststatus = RequestPending.find_by(reuest_id: @studentrequest.id)
 
     erb :view
   end
 
   post "/home/view/:id" do
     @requestpending = RequestPending.create(meetingdate: params[:date], meetingtime: params[:time], comments: params[:comments], reuest_id: params[:id])
-    if @requestpending.meetingdate !=nil
+    if @requestpending.meetingdate != nil
       @req = RequestPending.find_by(reuest_id: params[:id]).update(status: "Accepted")
     else
       @req = RequestPending.find_by(reuest_id: params[:id]).update(status: "Declined")
