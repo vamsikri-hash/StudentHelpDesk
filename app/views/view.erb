@@ -1,13 +1,13 @@
-<section class="divideit"> 
-<section class="reqdetails">
-  <div class="arrangedetails">
+<section class="mainsec">
+<section class="requestdetails">
+  <div class="meetdet">
 <h3>Request from <%=@requestedstudent.name%></h3>
 <h3>Department:<%=@requestedstudent.department%></h3>
 <div>
  	<ul class="list-group">
     <li class="list-group-item"><span style="font-size: 25px" class="higlight">Title:</span><span class="markit"><%= @studentrequest.title %></span></li>
     <li class="list-group-item"><span style="font-size: 25px" class="higlight">Body:</span><span class="markit"><%= @studentrequest.body %></span></li>
-    
+
   </ul>
 </div>
 </div>
@@ -15,7 +15,20 @@
 
 
 </section>
-<section class="response ">
+<%  if defined? @requeststatus.status ==nil %>
+<section class="meetingdetails">
+<div class="meetdet">
+<h3>Status Details</h3>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><span class="higlight">Status:</span><%= @requeststatus.status %></li>
+    <li class="list-group-item"><span class="higlight">Meeting Date:</span><%= @requeststatus.meetingdate %></li>
+    <li class="list-group-item"><span class="higlight">Meeting time:</span><%= @requeststatus.meetingtime %></li>
+    <li class="list-group-item"><span class="higlight">Comments:</span><%= @requeststatus.comments %></li>
+  </ul>
+  </div>
+  </section>
+<% else %>
+<section class="meetingdetails ">
 
 <div class="accordion  makingboxy" id="accordionExample">
   <div class="card boxy">
@@ -36,7 +49,7 @@
  		<label>Set Date</label>
  		<input class="form-control col-md-6" type="date" name="date">
  	</div>
- 	
+
  	<div class="form-group">
  		<label>Set Time</label>
  		<input type="text" class="form-control" name="time">
@@ -65,7 +78,7 @@
         <form action="/home/view/<%=@studentrequest.id%>" method="POST">
  	<div>
  	<div><h1>Response It</h1></div>
- 	
+
  	<div class="form-group">
  		<label>Comments</label>
  		 <textarea class="form-control" id="exampleFormControlTextarea1" name="comments" rows="3"></textarea>
@@ -78,7 +91,8 @@
     </div>
   </div>
 </div>
-	
+
 
 </section>
+<% end %>
 </section>
