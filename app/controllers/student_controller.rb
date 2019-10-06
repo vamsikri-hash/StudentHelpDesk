@@ -112,6 +112,7 @@ class StudentController < ApplicationController
     erb :requeststatus
   end
   get "/home/seniorstatus/:id" do
+    @me = SeniorRequest.find(params[:id])
     @pendingrequest = SeniorRequestPending.find_by(senior_request_id: params[:id])
     erb :requeststatus
   end
