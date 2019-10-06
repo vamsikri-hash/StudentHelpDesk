@@ -37,7 +37,7 @@ class SeniorController < ApplicationController
 
   post "/home/requestboard/:id" do
     @seniorrequestpending = SeniorRequestPending.create(meetingdate: params[:date], meetingtime: params[:time], comments: params[:comments], senior_request_id: params[:id])
-    if params[:date] != ""
+    if @seniorrequestpending.meetingdate !=nil
       @req = SeniorRequestPending.find_by(senior_request_id: params[:id]).update(status: "Accepted")
     else
       @req = SeniorRequestPending.find_by(senior_request_id: params[:id]).update(status: "Declined")
