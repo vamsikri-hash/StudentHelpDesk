@@ -19,7 +19,8 @@ class StudentController < ApplicationController
                                 rgno: params[:rgno],
                                 department: params[:department],
                                 email: params[:email],
-                                password: params[:password])
+                                password: params[:password],
+                                year: params[:year])
       @student.save
       session[:user_id] = @student.id
       redirect "/home/student_dashboard/#{@student.id}"
