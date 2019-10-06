@@ -1,0 +1,29 @@
+ <header>
+ 	<nav class="navbar navbar-light bg-light">
+ 		 <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="/home/student_dashboard/<%= @student.id %>">Go Back</a></button>
+
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+ </header>
+
+ <section>
+<ul>
+ 	<% @teachers.each do |teacher| %>
+      <li><a href="/home/teachers/<%=teacher.id %>"><%= teacher.name %></a></li>
+ 	<% end %>
+ </ul>
+
+ </section>
+
+
+ <section>
+<ul>
+ 	<% @seniors.each do |senior| %>
+      <li><a href="/home/seniors/<%=senior.id %>"><%= senior.name %></a></li>
+ 	<% end %>
+ </ul>
+
+ </section>

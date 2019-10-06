@@ -1,0 +1,82 @@
+<section>
+	<form action="/home/teacher/sign_up" onsubmit="return signcheck()" method="POST" class="form3">
+		<div><h4>Join SHD</h4></div>
+		<div><h1>Create Your Account</h1></div>
+		<div class="form-row">
+		<div class="form-group col-md-6">
+		<label>Name:</label>
+		<input type="text" class="form-control" id="name" name="name">
+		<small id="namehelpblock" class="form-text text-muted">
+</small>
+	</div>
+	<div class="form-group  col-md-4">
+		<label>University Id No</label>
+		<input type="text"  class="form-control"  id="uid" name="Uid">
+		<small id="uidhelpblock" class="form-text text-muted">
+</small>
+	</div>
+    
+		<div class="form-group  col-md-2">
+		<label>Department:</label>
+		<select name="department" class="form-control">
+			<option value="CSE">CSE</option>
+			<option value="ECE">ECE</option>
+			<option value="EEE">EEE</option>
+			<option value="CIVIL">CIVIL</option>
+			<option value="MECH">MECH</option>
+			<option value="CHE">CHE</option>
+			<option value="BIO">BIO</option>
+			<option value="IT">IT</option>
+			<option value="ICT">ICT</option>
+          </select>
+        </div>
+    </div>
+		<div class="form-group">
+		<label>University Email</label>
+		<input type="email" class="form-control" id="email" name="email">
+		<small id="mailhelpblock" class="form-text text-muted">
+</small>
+	    </div>
+	    <div class="form-group">
+		<label>Educational Qualifications</label>
+		<input type="textarea" class="form-control" id="degree" name="degree">
+		<small id="degreehelpblock" class="form-text text-muted">
+</small>
+	    </div>
+	    <div class="form-row">
+	    <div class="form-group col-md-6">
+		<label>Area of interest1</label>
+		<input type="text" class="form-control" id="ai1" name="ai1">
+		<small id="ai1helpblock" class="form-text text-muted">
+</small>
+	</div>
+
+	<div class="form-group col-md-6">
+		<label>Area of interest2</label>
+		<input type="text" class="form-control" id="ai2" name="ai2">
+		<small id="ai2helpblock" class="form-text text-muted">
+</small>
+	</div>
+</div>
+	<div class="form-group">
+		<label>Area of Interest3</label>
+		<input type="text" class="form-control" id="ai3" name="ai3">
+		<small id="ai3helpblock" class="form-text text-muted">
+</small>
+	</div>
+	<div class="form-group">
+		<label>Password</label>
+		<input type="password" class="form-control" id="password" name="password">
+		<small id="passwordhelpblock" class="form-text text-muted">
+			password must be minimum 5 charcters!
+</small>
+    </div>
+    
+		<input type="submit" class="form-control" name="Submit">
+
+		 <div><p>Already, have an account. please <a href="/home/teacher/login">login</a> here!</p></div>
+          <h5><a href="/home">Go Back here</a></h5>
+    
+	</form>
+</section>
+<script type="text/javascript" src="/javascript/teachsignup.js"></script>

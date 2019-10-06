@@ -1,0 +1,13 @@
+<section >
+  <div class="neatrequest">
+ 	<% @seniorrequests.each do |request| %>
+ 	<div >
+    <ul class="list-group">
+ 		<li class="list-group-item  requestarrange" ><h2>Request from student</h2>
+    <button type="button " class="btn btn-info  requestinfo"><a href="/home/requestboard/<%= request.id %>">view request</a></button>
+  </li>
+   </ul>
+  </div>
+<% end %>
+</div>
+ </section>

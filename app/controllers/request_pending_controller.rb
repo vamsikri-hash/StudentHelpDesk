@@ -1,0 +1,4 @@
+ class RequestPendingController < ApplicationController
+
+   
+ end

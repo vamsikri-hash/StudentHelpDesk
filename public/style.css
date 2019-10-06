@@ -1,0 +1,525 @@
+body
+{
+	width:100%;
+	height:100%;
+	margin: 0;
+	padding: 0;
+
+
+}
+.noter
+{
+
+
+}
+.same
+{
+	display:flex;
+}
+
+#notice
+{
+	width: 20%;
+	margin-left: 36%;
+}
+a
+{
+	text-decoration: none;
+}
+/* Styles for HOME PAGE */
+.index
+{
+	width: 100%;
+	height: 100vh;
+	background-image: url(study.jpg);
+	background-size: cover;
+
+
+}
+.layer
+{
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.7);
+}
+.home-header
+{
+height: 180px;
+width: 100%;
+/*background-color:#353b48;
+*/color: white;
+background-color: rgba(0,0,0,0.3);
+
+}
+.title
+{
+padding-top: 40px;
+margin-left:20%;
+font-size: 40px;
+font-family: sans-serif;
+}
+.home-footer
+{
+	height: 160px;
+
+}
+.social
+{
+	padding-left: 65%;
+}
+.social a
+{
+	color:whitesmoke;
+}
+.mi
+{
+	display: flex;
+	font-size: 40px;
+	padding-top: 30px;
+
+}
+.mi a{
+padding-left: 18px;
+}
+.mi a:hover
+{
+	font-size: 55px;
+	padding-left: 23px;
+}
+.mess
+{
+	padding-top: 30px;
+	color: whitesmoke;
+	font-size: 30px;
+	font-family: sans-serif;
+}
+.main-section
+{
+
+	display: flex;
+	height:650px;
+
+}
+
+.left-section
+{/*   background-image: url(study.jpg);
+	background-size: cover;
+	*/width: 50%;
+
+}
+
+.inside-text
+{  /*  background-color: rgba(0,0,0,0.7);
+	height:650px;
+	width: 100%;
+	/*margin-top:-30px;
+	margin-left: 50px;
+	padding-right: 20px;
+	border-radius: 10px;
+	*/
+}
+
+.about
+{
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 40px;
+
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: whitesmoke;
+}
+.right-section
+{
+	display: flex;
+	/*background-color: #636e72;
+	*/width: 50%;
+}
+.student-section
+ {  border: 1px solid white;
+	width: 320px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    height: 400px;
+    margin-left: 10%;
+    margin-top:15%;
+}
+.student-head
+{
+	font-size: 30px;
+	font-family: fantasy;
+	text-align: center;
+	color: white;
+	padding-bottom: 30px;
+}
+.stu-sign
+{
+	border: 1px solid white;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: floralwhite;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.stu-sign:hover
+{
+	font-size:35px;
+	 color:#2ecc71;
+    text-decoration: none;
+
+}
+.teacher-section
+{    border: 1px solid white;
+	width: 320px;
+    padding: 30px 30px;
+    border-radius: 10px;
+    height: 400px;
+    margin-left: 10%;
+    margin-top:15%;
+}
+
+
+
+/*   -------Styles for Student SignUp Page-------   */
+.form1
+{
+	width: 30%;
+	margin-left: 30%;
+    margin-top: 6%;
+}
+.form1 label
+{
+	font-weight: 900;
+}
+.form1 h4
+{
+	text-align: center;
+	font-weight: 200;
+	padding-bottom: 15px;
+}
+.form1 h1
+{
+	text-align: center;
+	padding-bottom: 15px;
+}
+.form1 input[type="submit"] {
+	background-color: #2ecc71;
+	color: whitesmoke;
+	font-weight: 600;
+}
+.form1 p
+{
+	font-size: 20px;
+	padding-top: 10px;
+
+}
+.form1 a
+{
+	text-decoration: none;
+}
+/* ---------Styles for student login form -------    */
+.form2 a
+{
+	text-decoration: none;
+}
+.form2
+{
+	width: 20%;
+	margin-left:35%;
+	margin-top: 10%;
+}
+.form2 h1
+{
+	text-align: center;
+	padding-bottom: 40px;
+	font-family: sans-serif;
+}
+.form2 label
+{
+	font-weight: 900;
+}
+.form2 input[type="submit"] {
+	background-color: #2ecc71;
+	color: whitesmoke;
+	font-weight: 600;
+}
+.mini-box
+{
+    background-color: #ecf0f1;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 12px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+
+/* -------------Styles form teacher sign up from ----------        */
+.form3
+{
+	width: 40%;
+	margin-left: 30%;
+    margin-top: 1%;
+}
+.form3 label
+{
+	font-weight: 900;
+}
+.form3 h4
+{
+	text-align: center;
+	font-weight: 200;
+	padding-bottom: 10px;
+}
+.form3 h1
+{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.form3 input[type="submit"] {
+	background-color: #2ecc71;
+	color: whitesmoke;
+	font-weight: 600;
+}
+.form3 p
+{
+	font-size: 20px;
+	padding-top: 10px;
+
+}
+.form3 a
+{
+	text-decoration: none;
+}
+
+
+/*    --------- Styles for tecaher login form ------------     */
+/* same as form2   */
+
+/* styles for student dashboard   */
+.student-header
+{
+	height: 120px;
+	background-color: #2c3e50;
+
+}
+.student-header .nav
+{
+	padding-top: 30px;
+}
+.student-header a
+{
+	color: #ffffff;
+	font-size: 25px;
+	font-family: sans-serif;
+}
+.left-stu
+{
+ width: 50%;
+    border: 2px solid black;
+    height: 100vh;
+    border-radius: 10px;
+    margin-right: 20px
+}
+.right-request
+{
+	display: flex;
+}
+.sturequestarrange
+{
+width: 50%;
+padding-left: 20px;
+}
+.sturequestarrange h3,.sturequestarrange2 h3{
+	padding-left: 20px;
+	padding-top: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom: 40px;
+}
+ .sturequestarrange button,.sturequestarrange2 button
+{
+	margin-left: 30px;
+
+}
+.sturequestarrange2 button a, .sturequestarrange button a
+{
+	color: whitesmoke;
+}
+.sturequestarrange button a:hover, .sturequestarrange2 button a:hover
+{
+	text-decoration: none;
+	color: aliceblue;
+}
+.sturequestarrange2
+{
+	width: 50%;
+	padding-left: 20px;
+}
+
+
+
+
+/*---------   styles for teacher profie viwed by students -------------*/
+.left-profile
+{
+	width: 50%;
+	height: 100vh;
+}
+
+.main-tp
+{
+	display: flex;
+}
+
+.right-profile
+{
+	width: 50%;
+	height: 100vh;
+}
+
+.post-group
+{
+	width: 50%;
+	height: 200px;
+	margin-left: 10%;
+}
+.post-group h1
+{
+	text-align: center;
+	padding-bottom: 40px;
+	padding-top: 40px;
+	font-family: sans-serif;
+
+}
+
+/** ---- styles for teacher response ------ ***/
+.boxy
+{
+	text-align: center;
+	width: 80%;
+}
+.makingboxy
+{
+	margin-left: 35%;
+}
+
+/**.divideit
+{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+} **/
+
+.reqdetails
+{
+	width: 30%;
+	margin-left: 25%;
+}
+.arrangedetails
+{
+	border: 2px solid green;
+	margin-left: 10%;
+	margin-top: 10%;
+	border-radius: 10px;
+}
+.arrangedetails h3
+{
+text-align: center;
+    padding-top: 9px;
+    color: forestgreen;
+    font-family: inherit;
+    font-weight: 600;
+}
+.response
+{
+	width: 50%;
+	margin-left: 10%;
+	padding-top: 2%;
+}
+.markit
+{
+	padding-left: 6px;
+	font-size: 20px;
+	font-family: sans-serif;
+	font-weight:500;
+}
+
+.resize
+{
+	width: 100px;
+	height: 100px;
+    margin-left: 20%;
+}
+
+.profile-box
+{
+	padding-left: 50px;
+    padding-top: 80px;
+}
+
+.higlight
+{
+	font-weight: 700;
+	font-style: serif;
+	padding-right: 8px;
+}
+.requestinfo a
+{
+	text-decoration: none;
+	color: white;
+}
+.requestinfo
+{
+  margin-left: 70px;
+}
+.requestarrange
+{
+	display: flex;
+}
+.neatrequest
+{
+width: 60%;
+    margin-top: 100px;
+    margin-left: 120px;
+}
+.right-requests
+{
+	width:50%;
+	border: 3px solid #7f8c8d;
+	border-radius: 10px
+}
+
+/*** ------ Studentdashboard profiles and requests ------*****/
+.profile-placer
+{
+	width: 400px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.right-request
+{
+	width: 50%;
+	 border: 2px solid black;
+    height: 100vh;
+    border-radius: 10px;
+}
+
+
+.boxytype
+{
+	border: 2px solid cornflowerblue;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 20%;
+    width: 50%;
+}
+.left-profile h3
+{
+	text-align: center;
+
+}

@@ -1,0 +1,67 @@
+<section class="student-signup">
+	<form action="/home/student/sign_up"  onsubmit="return check3()" method="POST" class="form1">
+		<div><h4>Join SHD</h4></div>
+		<div><h1>Create Your Account</h1></div>
+		<div class="form-group">
+		<label>Name:</label>
+		<input type="text"  class="form-control" id="name" name="name">
+		<small id="namehelpblock" class="form-text text-muted">
+</small>
+	    </div>
+	    <div class="form-group">
+		<label>Register Number:</label>
+		<input type="number" class="form-control" id="rgno"  name="rgno">
+		<small id="registerhelpblock" class="form-text text-muted">
+</small>
+	    </div>
+			<div class="form-row">
+		<div class="form-group col-md-4">
+		<label>Department:</label>
+		<select name="department" class="form-control" id="department">
+			<option value="CSE">CSE</option>
+			<option value="ECE">ECE</option>
+			<option value="EEE">EEE</option>
+			<option value="CIVIL">CIVIL</option>
+			<option value="MECH">MECH</option>
+			<option value="CHE">CHE</option>
+			<option value="BIO">BIO</option>
+			<option value="IT">IT</option>
+			<option value="ICT">ICT</option>
+          </select>
+          <small id="departmenthelpblock" class="form-text text-muted">
+                   </small>
+        </div>
+				<div class="form-group col-md-4">
+		<label>Year:</label>
+		<select name="year" class="form-control" id="year">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+
+          </select>
+          <small id="yearhelpblock" class="form-text text-muted">
+                   </small>
+        </div>
+				</div>
+          <div class="form-group">
+          <label>College Email Address:</label>
+          <input type="email" class="form-control" id="email" name="email">
+          <small id="mailhelpblock" class="form-text text-muted">
+</small>
+          </div>
+          <div class="form-group">
+          <label>Password:</label>
+          <input type="password" class="form-control" id="password" name="password">
+          <small id="passwordhelpblock" class="form-text text-muted">
+          	password must be minimum 5 charcters long
+</small>
+         </div>
+          <input type="submit" class="form-control  submit" name="Submit">
+          <div><p>Already, have an account. please <a href="/home/student/login">login</a> here!</p></div>
+          <h5><a href="/home">Go Back here</a></h5>
+
+
+	</form>
+</section>
+<script type="text/javascript" src="/javascript/stusignup.js"></script>

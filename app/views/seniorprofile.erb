@@ -1,0 +1,45 @@
+<section class="main-tp">
+ <section class="left-profile">
+
+ 	<div class="boxytype">
+<h3>Senior Profile</h3>
+ 	<ul class="list-group list-group-flush">
+    <li class="list-group-item">Name:<%= @senior.name %></li>
+    <li class="list-group-item">Department:<%= @student.department %></li>
+    <li class="list-group-item">Technologies known:<%= @senior.technologies %></li>
+    <li class="list-group-item">Email:<%= @student.email %></li>
+    <li class="list-group-item">Projects: <%=@senior.projects%></li>
+		<li class="list-group-item">Github Profile: <%=@senior.github_link%></li>
+  </ul>
+</div>
+ </section>
+ <section class="right-profile">
+ 	<div class="post-group">
+ 	<form action="/home/seniors/<%=@senior.id%>" method="POST">
+ 	<div>
+ 	<div><h1>Post It</h1></div>
+ 	<div class="form-group">
+ 		<label>Your Registration Number</label>
+ 		<input class="form-control" type="number" name="rgno">
+ 	</div>
+ 	<!--
+ 	<div class="form-group">
+ 		<label>teacher id Number</label>
+ 		<input class="form-control" type="number" name="teacherid">
+ 	</div>  -->
+ 	<div class="form-group">
+ 		<label>Title</label>
+ 		<input type="text" class="form-control" name="title">
+ 	</div>
+ 	<div class="form-group">
+ 		<label>Body</label>
+ 		 <textarea class="form-control" id="exampleFormControlTextarea1" name="body" rows="3"></textarea>
+ 	</div>
+
+ 		<input type="submit" class="form-control" name="Submit">
+ 	</div>
+
+ </form>
+</div>
+ </section>
+</section>

@@ -1,0 +1,35 @@
+
+<section class="student-signup">
+<h1>you can upgrade to senior account here</h1>
+	<form action="/home/student_dashboard/<%= @student.id %>/upgrade"  method="POST" class="form1">
+		<div><h4>Upgrade you SHD account</h4></div>
+	    <div class="form-group">
+		<label>Register Number:</label>
+		<input type="number" class="form-control" id="rgno"  name="rgno">
+		<small id="registerhelpblock" class="form-text text-muted">
+</small>
+	    </div>
+
+          <div class="form-group">
+          <label>Technologies you know:</label>
+ <textarea class="form-control" id="exampleFormControlTextarea1" name="technologies" rows="3"></textarea>
+          <small id="techhelpblock" class="form-text text-muted">
+</small>
+          </div>
+          <div class="form-group">
+          <label>Projects you have done:</label>
+           <textarea class="form-control" id="exampleFormControlTextarea1" name="projects" rows="3"></textarea>
+          <small id="projecthelpblock" class="form-text text-muted">
+
+</small>
+         </div>
+        <div class="form-group">
+ 		          <label>Github profile url</label>
+ 		          <input type="text" class="form-control" name="github_link">
+ 	           </div>
+          <input type="submit" class="form-control  submit" name="Submit">
+
+
+
+	</form>
+</section>

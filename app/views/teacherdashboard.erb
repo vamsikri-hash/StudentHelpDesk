@@ -1,0 +1,50 @@
+<header class="student-header">
+
+ <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link " href="#">Active</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="/logout">Logout</a>
+  </li>
+
+</ul>
+</header>
+<section class="main-tp">
+
+<section class="left-profile">
+ 	<div class="profile-box">
+    <h3 style="font-size: 40px; padding-left: 80px;">Your Profile</h3>
+    <div class="card" style="width: 25rem;">
+  <img src="\profile.png" class="card-img-top  resize" alt="...">
+ 	<ul class="list-group list-group-flush">
+    <li class="list-group-item"><span class="higlight">Name:</span><%= @teacher.name %></li>
+    <li class="list-group-item"><span class="higlight">Department:</span><%= @teacher.department %></li>
+    <li class="list-group-item"><span class="higlight">Areas of interest:</span><%= @teacher.ai1 %>,<%= @teacher.ai2 %>,<%= @teacher.ai3 %></li>
+    <li class="list-group-item"><span class="higlight">Email:</span><%= @teacher.email %></li>
+    <li class="list-group-item"><span class="higlight">Qualifications:</span> <%=@teacher.degree %></li>
+  </ul>
+</div>
+</div>
+ </section>
+ <section class="right-requests">
+  <div class="neatrequest">
+ 	<% @requests.each do |request| %>
+<% if defined? RequestPending.find_by(reuest_id: request.id).status !=nil%>
+ 	<div >
+    <ul class="list-group">
+ 		<li class="list-group-item  requestarrange" ><h2>Request from student</h2>
+    <button type="button " class="btn btn-info  requestinfo"><a href="/home/view/<%= request.id %>">view request</a></button>
+  </li>
+   </ul>
+  </div>
+  <%else%>
+  <div>
+   <button type="button  " class="btn btn-danger  requestinfo"><a href="/home/view/<%= request.id %>">view request</a></button>
+  </div>
+  <%end%>
+<% end %>
+</div>
+ </section>
+</section>

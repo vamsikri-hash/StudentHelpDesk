@@ -1,0 +1,10 @@
+  <ul class="list-group list-group-flush">
+  	<% if defined? (@pendingrequest.status) !=nil %>
+    <li class="list-group-item">Status:<%= @pendingrequest.status %></li>
+    <li class="list-group-item">Meeting Date:<%= @pendingrequest.meetingdate %></li>
+    <li class="list-group-item">Meeting time:<%= @pendingrequest.meetingtime %></li>
+    <li class="list-group-item">Comments:<%= @pendingrequest.comments %></li>
+    <% else %>
+    <h1>Your status is still pending....</h1>
+    <% end %>
+  </ul>

@@ -1,0 +1,55 @@
+<header class="student-header">
+
+ <ul class="nav justify-content-end">
+  <li class="nav-item">
+  <% if defined? @senior.student_id !=nil  %>
+         <a class="nav-link" href="/home/requestboard">Request board</a>
+
+    <%else%>
+
+    <a class="nav-link " href="/home/student_dashboard/<%= @student.id %>/upgrade">Upgrade</a>
+    <%end%>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/home/teachers">Teachers</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/logout">Logout</a>
+  </li>
+
+</ul>
+</header>
+<section class="main-tp">
+
+<section class="left-stu">
+	<div class="profile-placer">
+
+	<div class="card" style="width: 18rem;">
+     <img src="/studentprofile.png" class="card-img-top" alt="...">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><span class="higlight">Name:</span><%= @student.name %></li>
+    <li class="list-group-item"><span class="higlight">Register number:</span><%= @student.rgno %></li>
+    <li class="list-group-item"><span class="higlight">Department:</span><%= @student.department %></li>
+    <li class="list-group-item"><span class="higlight">Email:</span><%= @student.email %></li>
+  </ul>
+</div>
+
+</div>
+</section>
+<section class="right-request">
+  <div class="sturequestarrange">
+  <h3>Teacher Requests</h3>
+  <% @requests.each do |request| %>
+  <button type="button" class="btn btn-success"><a href="/home/status/<%= request.id %>">View Request Status</a></button>
+
+  <% end %>
+</div>
+<div class="sturequestarrange2">
+<h3>Senior Requests </h3>
+  <% @senior_requests.each do |request| %>
+  <button type="button" class="btn btn-success"><a href="/home/seniorstatus/<%= request.id %>">View Request Status</a></button>
+
+  <% end %>
+</div>
+</section>
+</section>
