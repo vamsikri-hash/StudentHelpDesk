@@ -1,13 +1,35 @@
-<section >
-  <div class="neatrequest">
+
+<section>
+<div class="nice">
+<h3><span style="color:tomato">Request Board</span>- Requests from Students</h3>
+</div>
+  <div class="neatrequest2">
  	<% @seniorrequests.each do |request| %>
- 	<div >
+   <div class="completed-requests">
+<% if defined? SeniorRequestPending.find_by(senior_request_id: request.id).status !=nil%>
+
     <ul class="list-group">
- 		<li class="list-group-item  requestarrange" ><h2>Request from student</h2>
+ 		<li class="list-group-item  requestarrange" >
     <button type="button " class="btn btn-info  requestinfo"><a href="/home/requestboard/<%= request.id %>">view request</a></button>
+    <h5 style="padding-left:25px;">Completed Request</h5>
   </li>
    </ul>
   </div>
+
+  <%else%>
+  <div class="pending-requests">
+
+   <ul class="list-group">
+ 		<li class="list-group-item  requestarrange" >
+    <button type="button " class="btn btn-danger  requestinfo"><a href="/home/requestboard/<%= request.id %>">view request</a></button>
+    <h5 style="padding-left:25px;">Pending Request</h5>
+
+
+  </li>
+   </ul>
+</div>
+  <%end%>
+
 <% end %>
 </div>
  </section>
