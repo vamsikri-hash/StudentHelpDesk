@@ -88,7 +88,7 @@ class TeacherController < ApplicationController
 
   post "/home/view/:id" do
     @requestpending = RequestPending.create(meetingdate: params[:date], meetingtime: params[:time], comments: params[:comments], reuest_id: params[:id])
-    if params[:date] != ""
+    if @requestpending.meetingdate !=nil
       @req = RequestPending.find_by(reuest_id: params[:id]).update(status: "Accepted")
     else
       @req = RequestPending.find_by(reuest_id: params[:id]).update(status: "Declined")
