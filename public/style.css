@@ -568,3 +568,27 @@ width: 60%;
     margin: 20%;
 
 }
+
+.neatrequest2
+{
+	width: 30%;
+    margin-top: 100px;
+    margin-left: 120px
+}
+.neatrequest2 div{
+	padding-bottom: 20px;
+}
+
+.nice
+{
+	background-color: dimgray;
+	height: 120px;
+}
+.nice h3
+{
+	font-family: monospace;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 40px;
+	color: whitesmoke;
+}
