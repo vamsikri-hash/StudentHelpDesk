@@ -485,7 +485,8 @@ text-align: center;
 {
 width: 60%;
     margin-top: 100px;
-    margin-left: 120px;
+		margin-left: 120px;
+
 }
 .right-requests
 {
@@ -523,3 +524,5 @@ width: 60%;
 	text-align: center;
 
 }
+
+/*------------  Teacherdashboard styles ------------- ***********/

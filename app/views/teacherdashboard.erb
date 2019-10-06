@@ -31,19 +31,29 @@
  <section class="right-requests">
   <div class="neatrequest">
  	<% @requests.each do |request| %>
+   <div class="completed-requests">
 <% if defined? RequestPending.find_by(reuest_id: request.id).status !=nil%>
- 	<div >
+
     <ul class="list-group">
- 		<li class="list-group-item  requestarrange" ><h2>Request from student</h2>
+ 		<li class="list-group-item  requestarrange" >
     <button type="button " class="btn btn-info  requestinfo"><a href="/home/view/<%= request.id %>">view request</a></button>
+    <h5 style="padding-left:25px;">Completed Request</h5>
   </li>
    </ul>
   </div>
+
   <%else%>
-  <div>
-   <button type="button  " class="btn btn-danger  requestinfo"><a href="/home/view/<%= request.id %>">view request</a></button>
-  </div>
+  <div class="pending-requests">
+
+   <ul class="list-group">
+ 		<li class="list-group-item  requestarrange" >
+    <button type="button " class="btn btn-danger  requestinfo"><a href="/home/view/<%= request.id %>">view request</a></button>
+    <h5 style="padding-left:25px;">Pending Request</h5>
+  </li>
+   </ul>
+</div>
   <%end%>
+
 <% end %>
 </div>
  </section>
