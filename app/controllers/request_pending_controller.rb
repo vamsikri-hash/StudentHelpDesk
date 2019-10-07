@@ -1,4 +1,2 @@
- class RequestPendingController < ApplicationController
-
-   
- end
+class RequestPendingController < ApplicationController
+end
