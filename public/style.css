@@ -62,11 +62,35 @@ font-family: sans-serif;
 {
 	height: 200px;
 	background-color: rgba(0,0,0,0.3);
+	display: flex;
 
+}
+.contact
+{
+	width:700px;
+}
+.contact p
+{
+	color: white;
+	padding-left: 120px;
+	font-size: 27px;
+}
+.contact i{
+	padding-right: 20px;
+    font-size: 40px;
+}
+.contact h4{
+	color: white;
+    font-size: 30px;
+    font-style: oblique;
+    font-family: sans-serif;
+    padding-left: 140px;
+		padding-top: 30px;
+		padding-bottom: 10px;
 }
 .social
 {
-	padding-left: 65%;
+	padding-left: 35%;
 }
 .social a
 {
