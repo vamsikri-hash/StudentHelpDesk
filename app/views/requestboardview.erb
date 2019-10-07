@@ -1,6 +1,6 @@
-<section class="divideit">
-<section class="reqdetails">
-  <div class="arrangedetails">
+<section class="mainsec">
+<section class="requestdetails">
+  <div class="meetdet">
 <h3>Request from <%=@requestedstudent.name%></h3>
 <h3>Department:<%=@requestedstudent.department%></h3>
 <div>
@@ -15,7 +15,20 @@
 
 
 </section>
-<section class="response ">
+<%  if defined? @requeststatus.status ==nil %>
+<section class="meetingdetails">
+<div class="meetdet">
+<h3>Status Details</h3>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><span class="higlight">Status:</span><%= @requeststatus.status %></li>
+    <li class="list-group-item"><span class="higlight">Meeting Date:</span><%= @requeststatus.meetingdate %></li>
+    <li class="list-group-item"><span class="higlight">Meeting time:</span><%= @requeststatus.meetingtime %></li>
+    <li class="list-group-item"><span class="higlight">Comments:</span><%= @requeststatus.comments %></li>
+  </ul>
+  </div>
+  </section>
+<% else %>
+<section class="meetingdetails ">
 
 <div class="accordion  makingboxy" id="accordionExample">
   <div class="card boxy">
@@ -81,4 +94,5 @@
 
 
 </section>
+<% end %>
 </section>
