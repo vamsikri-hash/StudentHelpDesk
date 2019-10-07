@@ -31,13 +31,14 @@ class SeniorController < ApplicationController
 
   get "/home/requestboard/:id" do
     @senior_request = SeniorRequest.find(params[:id])
+    @requeststatus = SeniorRequestPending.find_by(senior_request_id: @senior_request.id)
     @requestedstudent = Student.find(@senior_request.student_id)
     erb :requestboardview
   end
 
   post "/home/requestboard/:id" do
     @seniorrequestpending = SeniorRequestPending.create(meetingdate: params[:date], meetingtime: params[:time], comments: params[:comments], senior_request_id: params[:id])
-    if @seniorrequestpending.meetingdate !=nil
+    if @seniorrequestpending.meetingdate != nil
       @req = SeniorRequestPending.find_by(senior_request_id: params[:id]).update(status: "Accepted")
     else
       @req = SeniorRequestPending.find_by(senior_request_id: params[:id]).update(status: "Declined")
