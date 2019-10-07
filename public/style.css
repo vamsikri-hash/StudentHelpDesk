@@ -86,6 +86,23 @@ padding-left: 18px;
 {
 	font-size: 55px;
 	padding-left: 23px;
+
+}
+.mi .facebook a:hover
+{
+	color: cornflowerblue;
+}
+.twitter a:hover
+{
+	color:deepskyblue;
+}
+.youtube a:hover
+{
+	color:red;
+}
+.insta a:hover
+{
+	color:#e84393;
 }
 .mess
 {
