@@ -653,3 +653,45 @@ width: 60%;
 {
 	width: 30%;
 }
+
+.tlist h4
+{
+	padding-left: 50px;
+    padding-top: 30px;
+		font-family: inherit;
+		font-size: 30px;
+}
+ .search
+{
+	width: 70%;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.list{
+    list-style: none;
+    padding-top: 5px
+}
+.teacherpro
+{
+	background-color: lightgoldenrodyellow;
+	height: 100vh;
+}
+.seniorpro{
+	background-color:antiquewhite;
+	height: 100vh;
+}
+.users
+{
+	margin-top: 40px;
+	margin-left: 30px;
+}
+
+.some
+{
+	height: 80px;
+}
+.sen
+{
+height: 80px;
+}
