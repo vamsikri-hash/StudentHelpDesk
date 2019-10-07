@@ -2,28 +2,47 @@
  	<nav class="navbar navbar-light bg-light">
  		 <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="/home/student_dashboard/<%= @student.id %>">Go Back</a></button>
 
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
+
 </nav>
  </header>
+ <section class="main-tp">
 
- <section>
-<ul>
+ <section class="teacherpro">
+
+ <div id="teacher-list">
+  <input   class="search form-control mr-sm-2" placeholder="Search" />
+<ul class="list">
  	<% @teachers.each do |teacher| %>
-      <li><a href="/home/teachers/<%=teacher.id %>"><%= teacher.name %></a></li>
+      <li><h3 class="name"><a href="/home/teachers/<%=teacher.id %>"><%= teacher.name %></a></h3></li>
+      <li><h3 class="name">abcd</h3></li>
  	<% end %>
  </ul>
-
+<div>
  </section>
 
 
- <section>
-<ul>
+ <section class="seniorpro">
+
+ <div class="users">
+<ul class="list">
  	<% @seniors.each do |senior| %>
-      <li><a href="/home/seniors/<%=senior.id %>"><%= senior.name %></a></li>
+      <li><h3 class="born"><a  href="/home/seniors/<%=senior.id %>"><%= senior.name %></h3></a></li>
+
  	<% end %>
  </ul>
-
+</div>
  </section>
+<section>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script>
+
+
+var options = {
+    valueNames: [ 'name']
+};
+
+
+var teacherlist = new List('teacher-list', options);
+</script>
