@@ -9,7 +9,7 @@
     <li class="list-group-item">Technologies known:<%= @senior.technologies %></li>
     <li class="list-group-item">Email:<%= @student.email %></li>
     <li class="list-group-item">Projects: <%=@senior.projects%></li>
-		<li class="list-group-item">Github Profile: <%=@senior.github_link%></li>
+		<li class="list-group-item">Github Profile: <a href="<%=@senior.github_link%>" target="_blank"><%=@senior.github_link%></a></li>
   </ul>
 </div>
  </section>
@@ -36,7 +36,7 @@
  		 <textarea class="form-control" id="exampleFormControlTextarea1" name="body" rows="3"></textarea>
  	</div>
 
- 		<input type="submit" class="form-control" name="Submit">
+ 		<input  type="submit" class="form-control" name="Submit">
  	</div>
 
  </form>
